@@ -21,6 +21,48 @@ header {
   margin: 2em;
 }
 
+button.nav-toggle {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  right: 100px;
+  /* visibility: hidden; */
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  list-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-list-link:link,
+.header-nav-list-link:active,
+.header-nav-list-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.header-nav-list-link:hover,
+.header-nav-list-link:focus {
+  color: #14cfae;
+}
+
+.selected {
+  border-bottom: 1px solid black;
+}
+
 div.header-heading {
   display: flex;
   flex-direction: row;
