@@ -258,4 +258,29 @@ div.header-main-text p:before {
 
 footer {
   background-color: #141414;
+  color: #16e0bd;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 252px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
 }
+
+footer a {
+  text-decoration: none;
+  color: #16e0bd;
+}
+
+footer a:hover,
+footer a:focus {
+  font-weight: 900;
+}
+
+.fa-brands {
+  padding: 1em;
+}
+
+/* SEE WHY FONT AWSOME ISN'T WORKING */
