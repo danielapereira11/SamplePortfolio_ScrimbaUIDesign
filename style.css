@@ -30,7 +30,7 @@ button.nav-toggle {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   right: 100px;
   /* visibility: hidden; */
 }
@@ -125,7 +125,84 @@ div.header-main-text p:before {
   order: -1;
 }
 
-#what-i-do {
-  height: 100px;
+#my-services {
+  width: 100%;
+  background-color: grey;
+  background-image: url("img/services-bg.jpg");
+  background-blend-mode: multiply;
+  background-repeat: none;
+  object-fit: cover;
+  color: white;
+}
+
+.my-services-container {
+  padding: 5em;
+}
+
+.my-services-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: center;
+  padding: 3em;
+}
+
+#my-services h2 {
+  color: #14cfae;
+  font-size: 3.75rem;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 0.2em;
+}
+
+#my-services span {
+  display: block;
+  margin: 0 auto;
+  height: 1px;
+  width: 95px;
+  color: white;
+  border: 1px solid white;
+}
+
+#my-services h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+#my-services p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.btn-my-services {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin: 3em auto 2em;
+  padding: 0;
+  background-color: #16e0bd;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-my-services a {
+  display: block;
+  padding: 1em 3.5em;
+  text-decoration: none;
+  color: #333333;
+}
+
+.btn-my-services a:hover,
+.btn-my-services a:focus {
+  background-color: #1c4b43;
+  color: #ffffff;
+}
+
   background-color: #303030;
 }
