@@ -147,12 +147,13 @@ div.header-main-text p:before {
 #my-services {
   width: 100%;
   background-color: grey;
-  background-image: url("img/services-bg.jpg");
+  background-image: url("../img/services-bg.jpg");
   background-blend-mode: multiply;
   background-repeat: none;
   object-fit: cover;
   color: white;
 }
+/* SEE WHY THE BG IMAGE IS REPEATING */
 
 .my-services-container {
   padding: 5em;
@@ -278,9 +279,3 @@ footer a:hover,
 footer a:focus {
   font-weight: 900;
 }
-
-.fa-brands {
-  padding: 1em;
-}
-
-/* SEE WHY FONT AWSOME ISN'T WORKING */
