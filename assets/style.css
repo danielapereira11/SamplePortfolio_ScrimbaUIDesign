@@ -279,3 +279,8 @@ footer a:hover,
 footer a:focus {
   font-weight: 900;
 }
+
+.fab {
+  padding: 1em;
+  color: #16e0bd;
+}
