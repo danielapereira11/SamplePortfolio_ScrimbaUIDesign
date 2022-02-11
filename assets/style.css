@@ -255,6 +255,36 @@ div.header-main-text p:before {
 #my-work {
   width: 100%;
   background-color: #303030;
+  text-align: center;
+}
+
+#my-work h2 {
+  color: white;
+}
+
+#my-work h3 {
+  color: #16e0bd;
+  margin: 0.5em auto 1em;
+}
+
+.my-work-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 8em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-work-portfolio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 4em;
+}
+
+.portfolio-img {
+  max-width: 240px;
 }
 
 footer {
