@@ -78,6 +78,7 @@ div.header-main-content {
 
 div.header-main-text {
   align-self: center;
+  margin-bottom: 1em;
 }
 
 h1 {
@@ -299,6 +300,7 @@ footer a:focus {
   nav {
     position: absolute;
     right: 100px;
+    visibility: visible;
   }
 
   div.header-main-content {
@@ -312,6 +314,10 @@ footer a:focus {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  div.header-main-text {
+    margin: 0;
   }
 
   div.header-main-text p {
@@ -357,6 +363,11 @@ footer a:focus {
     justify-content: center;
     padding: 4em;
     text-align: left;
+    max-width: 80%;
+  }
+
+  .about-me-main {
+    margin-right: 2em;
   }
 
   #about-me h3 {
@@ -368,9 +379,9 @@ footer a:focus {
   #about-me h3:before {
     content: "";
     position: absolute;
-    transform: translate(-8%, -20%);
+    transform: translate(-6%, -20%);
     height: 51.5px;
-    width: 180%;
+    width: 170%;
     background-color: #14cfae;
     z-index: -1;
   }
