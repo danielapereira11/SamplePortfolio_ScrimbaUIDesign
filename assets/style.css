@@ -120,7 +120,7 @@ div.header-main-text p {
   text-transform: uppercase;
   letter-spacing: 0.17em;
   margin: 0;
-  padding: 0.1em 0;
+  padding: 0.2em;
   background-color: #14cfae;
   position: relative;
 }
@@ -139,7 +139,6 @@ div.header-main-text p {
   background-color: #303030;
   color: white;
 }
-/* SEE WHY THE BG IMAGE IS REPEATING */
 
 .my-services-container {
   padding: 3em 1em;
@@ -206,7 +205,7 @@ div.header-main-text p {
 .about-me-container {
   max-width: 90%;
   margin: 2em auto;
-  padding: 4em;
+  padding: 1em;
   display: flex;
   gap: 3em;
   flex-direction: column;
@@ -252,7 +251,7 @@ div.header-main-text p {
 .my-work-container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 8em 0;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
 }
@@ -318,6 +317,7 @@ footer a:focus {
   div.header-main-text p {
     font-size: 2.2rem;
     letter-spacing: 0.2em;
+    padding: 0.1em 0;
   }
 
   div.header-main-text p:before {
@@ -355,6 +355,7 @@ footer a:focus {
   .about-me-container {
     flex-direction: row;
     justify-content: center;
+    padding: 4em;
     text-align: left;
   }
 
@@ -372,5 +373,9 @@ footer a:focus {
     width: 180%;
     background-color: #14cfae;
     z-index: -1;
+  }
+
+  .my-work-container {
+    padding: 8em 0;
   }
 }
