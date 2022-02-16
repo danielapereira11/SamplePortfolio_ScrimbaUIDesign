@@ -32,7 +32,7 @@ button.nav-toggle {
 nav {
   position: absolute;
   right: 100px;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .header-nav-list {
@@ -72,7 +72,7 @@ div.header-heading {
 div.header-main-content {
   align-self: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 2em auto;
 }
 
@@ -81,9 +81,10 @@ div.header-main-text {
 }
 
 h1 {
-  font-size: 4.4rem;
+  font-size: 3rem;
   font-weight: 300;
   color: #303030;
+  text-align: center;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -97,7 +98,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
 }
@@ -114,24 +115,14 @@ div.header-main-text span {
 }
 
 div.header-main-text p {
-  font-size: 2.2rem;
+  font-size: 1.69rem;
   color: #1c4b43;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.17em;
   margin: 0;
   padding: 0.1em 0;
   background-color: #14cfae;
   position: relative;
-}
-
-div.header-main-text p:before {
-  content: "";
-  position: absolute;
-  transform: translate(-100%, -7.7%);
-  height: 51.5px;
-  width: 340px;
-  background-color: #14cfae;
-  z-index: -1;
 }
 
 .header-img-logo {
@@ -140,35 +131,31 @@ div.header-main-text p:before {
 }
 
 .header-img-headshot {
-  width: 313px;
-  order: -1;
+  width: 249px;
 }
 
 #my-services {
   width: 100%;
-  background-color: grey;
-  background-image: url("../img/services-bg.jpg");
-  background-blend-mode: multiply;
-  background-repeat: none;
-  object-fit: cover;
+  background-color: #303030;
   color: white;
 }
 /* SEE WHY THE BG IMAGE IS REPEATING */
 
 .my-services-container {
-  padding: 5em;
+  padding: 3em 1em;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .my-services-columns {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5em;
   justify-content: space-between;
   align-items: flex-end;
   text-align: center;
-  max-width: 80%;
   margin: 0 auto;
-  padding: 3em;
+  padding: 3em 0 2em;
 }
 
 #my-services h2 {
@@ -217,13 +204,14 @@ div.header-main-text p:before {
 }
 
 .about-me-container {
-  max-width: 70%;
+  max-width: 90%;
   margin: 2em auto;
   padding: 4em;
   display: flex;
   gap: 3em;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .about-me-main {
@@ -231,25 +219,19 @@ div.header-main-text p:before {
 }
 
 .about-me-img {
+  display: block;
+  margin: 0 auto;
   width: 244px;
   height: 406px;
 }
 
 #about-me h3 {
-  font-weight: normal;
+  font-weight: bold;
   color: #303030;
   position: relative;
   margin: 1em 0;
-}
-
-#about-me h3:before {
-  content: "";
-  position: absolute;
-  transform: translate(-8%, -20%);
-  height: 51.5px;
-  width: 180%;
   background-color: #14cfae;
-  z-index: -1;
+  padding: 1em;
 }
 
 #my-work {
@@ -312,4 +294,83 @@ footer a:focus {
 
 .fab {
   padding: 1em;
+}
+
+@media (min-width: 1285px) {
+  nav {
+    position: absolute;
+    right: 100px;
+  }
+
+  div.header-main-content {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  div.header-main-text p {
+    font-size: 2.2rem;
+    letter-spacing: 0.2em;
+  }
+
+  div.header-main-text p:before {
+    content: "";
+    position: absolute;
+    transform: translate(-100%, -7.7%);
+    height: 51.5px;
+    width: 340px;
+    background-color: #14cfae;
+    z-index: -1;
+  }
+
+  .header-img-headshot {
+    width: 313px;
+    order: -1;
+  }
+
+  #my-services {
+    background-color: grey;
+    background-image: url("../img/services-bg.jpg");
+    background-blend-mode: multiply;
+    background-repeat: none;
+    object-fit: cover;
+  }
+
+  .my-services-container {
+    padding: 5em;
+  }
+
+  .my-services-columns {
+    flex-direction: row;
+    max-width: 80%;
+  }
+
+  .about-me-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  #about-me h3 {
+    font-weight: normal;
+    padding: 0;
+    background-color: none;
+  }
+
+  #about-me h3:before {
+    content: "";
+    position: absolute;
+    transform: translate(-8%, -20%);
+    height: 51.5px;
+    width: 180%;
+    background-color: #14cfae;
+    z-index: -1;
+  }
 }
